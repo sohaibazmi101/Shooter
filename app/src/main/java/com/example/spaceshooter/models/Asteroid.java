@@ -6,9 +6,9 @@ import android.graphics.Rect;
 
 public class Asteroid {
     public int x, y;
-    public int size = DEFAULT_SIZE;
+    public int size;
     public int speed = 5;
-    public static final int DEFAULT_SIZE = 40;
+    public static final int DEFAULT_SIZE = 90;
 
     public Asteroid(int x, int y) {
         this.x = x;
