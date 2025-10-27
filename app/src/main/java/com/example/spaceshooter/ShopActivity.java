@@ -1,5 +1,6 @@
 package com.example.spaceshooter;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
@@ -30,6 +31,7 @@ public class ShopActivity extends AppCompatActivity {
         btnBullet.setOnClickListener(v -> buy("Double Bullet", 200));
     }
 
+    @SuppressLint("SetTextI18n")
     private void updateCoins() {
         int coins = prefs.getInt("coins", 0);
         tvCoins.setText("Coins: " + coins);
